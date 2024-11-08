@@ -1,9 +1,7 @@
 @echo off
 
-cd data
-call prettify
-cd ..
+call "%~dp0..\distance-learning\b.cmd"
 
 git add *
-git commit -m publish
+git commit -m update
 git push
